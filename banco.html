@@ -1,0 +1,52 @@
+<select class="form-control" id="banco" name="banco">
+    <option value="">Seleccione</option>
+    <option value="0134">BANESCO BANCO UNIVERSAL S.A.C.A.</option>
+    <option value="0156">100% BANCO, BANCO UNIVERSAL C.A.</option>
+    <option value="0172">BANCAMIGA BANCO UNIVERSAL, C.A.</option>
+    <option value="0114">BANCARIBE C.A. BANCO UNIVERSAL</option>
+    <option value="0171">BANCO ACTIVO</option>
+    <option value="0128">BANCO CARONI C.A. BANCO UNIVERSAL</option>
+    <option value="0177">BANCO DE LA FANB</option>
+    <option value="0146">BANCO DE LA GENTE EMPRENDEDORA C.A.</option>
+    <option value="0102">BANCO DE VENEZUELA</option>
+    <option value="0163">BANCO DEL TESORO</option>
+    <option value="0007">BANCO DIGITAL DE LOS TRABAJADORES</option>
+    <option value="0178">BANCO DIGITAL N58</option>
+    <option value="0115">BANCO EXTERIOR C.A. BANCO UNIVERSAL</option>
+    <option value="0105">BANCO MERCANTIL</option>
+    <option value="0191">BANCO NACIONAL DE CREDITO</option>
+    <option value="0138">BANCO PLAZA, BANCO UNIVERSAL</option>
+    <option value="0108">BANCO PROVINCIAL</option>
+    <option value="0137">BANCO SOFITASA</option>
+    <option value="0168">BANCRECER, S.A. BANCO MICROFINANCIERO</option>
+    <option value="0174">BANPLUS BANCO UNIVERSAL, C.A.</option>
+    <option value="0151">BFC BANCO FONDO COMUN</option>
+    <option value="0157">DEL SUR BANCO UNIVERSAL C.A.</option>
+    <option value="0601">INSTITUTO MUNICIPAL DE CREDITO POPULAR</option>
+    <option value="0169">R4, BANCO MICROFINANCIERO, C.A</option>
+    <option value="0104">VENEZOLANO DE CREDITO</option>
+</select>
+
+<select class="form-control valid" id="pref" name="prefijo" required="" aria-invalid="false">
+
+    <option value="0416"> 0416</option>
+    <option value="0426"> 0426</option>
+    <option value="0414"> 0414</option>
+    <option value="0424"> 0424</option>
+    <option value="0412"> 0412</option>
+    <option value="0422"> 0422</option>
+    //end foreach
+</select>
+
+<input type="text" inputmode="numeric" class="form-control" name="telefono" id="tel" placeholder="Ej. 04161234567"
+    maxlength="7">
+
+<input type="text" inputmode="numeric" class="form-control" name="cedula" id="ced" placeholder="Ej. 16123456"
+    maxlength="10">
+
+<input type="text" inputmode="numeric" data-thousands="." data-decimal="," class="form-control valid" name="monto"
+    id="monto" onkeyup="limpiarNumero(this)" onchange="limpiarNumero(this)" placeholder="Ingrese monto a pagar"
+    maxlength="16" autocomplete="off" aria-invalid="false">
+
+<input type="text" class="form-control" name="concepto" id="concepto" placeholder="Concepto de la transferencia"
+    pattern="[A-Za-z0-9 ]{3,30}" maxlength="30">

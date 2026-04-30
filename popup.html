@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      width: 200px;
+      padding: 15px;
+      font-family: sans-serif;
+    }
+
+    .status {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .toggle-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #data-display {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+      font-size: 11px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>P2P Tracker</h3>
+  <div class="toggle-container">
+    <span>Auto-run (60s)</span>
+    <input type="checkbox" id="autoRunToggle">
+  </div>
+  <!-- Dentro de tu popup.html -->
+  <div style="margin-bottom: 10px;">
+    <label for="filterAmount" style="display: block; font-size: 12px;">Monto a filtrar (VES):</label>
+    <input type="number" id="filterAmount" placeholder="Ej: 500" style="width: 100%; box-sizing: border-box;">
+  </div>
+  <div id="data-display">Cargando datos...</div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
