@@ -198,11 +198,20 @@ const runScraper = async () => {
                     buy_price: vNum.toFixed(3),
                     sell_price: cNum.toFixed(3),
                     spread_percent: spread.toFixed(3),
-                    last_update: new Date().toLocaleTimeString()
+                    last_update: new Date().toLocaleString('es-ES', {
+                        day: '2-digit',
+                        month: '2-digit',
+                        year: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    })
                 };
 
                 chrome.storage.local.set({ "p2p_stats": JSON.stringify(stats) }, () => {
                     console.log("🔥 STATS GUARDADAS EXITOSAMENTE:", stats);
+
+
                 });
             } else {
                 console.error("❌ Error: Los precios parseados no son válidos para el cálculo.");

@@ -3,11 +3,7 @@
   "name": "Binance P2P Tracker",
   "version": "1.1",
   "permissions": [
-    "storage",
-    "scripting"
-  ],
-  "host_permissions": [
-    "https://p2p.binance.com/*"
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html"
@@ -18,8 +14,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://p2p.binance.com/*",
-        "https://c2c.binance.com/*"
+        "https://p2p.binance.com/*/trade/*",
+        "https://c2c.binance.com/*trade/*"
       ],
       "js": [
         "content.js"
